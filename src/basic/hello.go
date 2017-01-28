@@ -24,6 +24,7 @@ func main() {
 
 	loopArray()
 	gotoLoop()
+	charPyramid()
 }
 
 func loopArray() {
@@ -42,5 +43,15 @@ func gotoLoop() {
 	if i < 10 {
 		i++
 		goto loop
+	}
+}
+
+func charPyramid() {
+	fmt.Println()
+	fmt.Println("================ Char Pyramid ==================")
+	c := "A"
+	for i := 0; i < 10; i++ {
+		fmt.Println(c)
+		c = c + "A"
 	}
 }
