@@ -23,11 +23,24 @@ func main() {
 	}
 
 	loopArray()
+	gotoLoop()
 }
 
 func loopArray() {
 	array := []string{"a", "b", "c"}
 	for i := 0; i < len(array); i++ {
 		fmt.Printf("%s", array[i])
+	}
+}
+
+func gotoLoop() {
+	fmt.Println()
+	fmt.Println("================ Demo goto loop ================")
+	i := 0
+	loop:
+	fmt.Printf("%d\n", i)
+	if i < 10 {
+		i++
+		goto loop
 	}
 }
