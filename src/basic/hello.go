@@ -21,4 +21,13 @@ func main() {
 	for pos, char := range "aux" {
 		fmt.Printf("character '%c' starts at byte position %d\n", char, pos)
 	}
+
+	loopArray()
+}
+
+func loopArray() {
+	array := []string{"a", "b", "c"}
+	for i := 0; i < len(array); i++ {
+		fmt.Printf("%s", array[i])
+	}
 }
