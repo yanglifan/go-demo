@@ -17,4 +17,8 @@ func main() {
 	c[0] = 'c'
 	s2 := string(c)
 	fmt.Printf("%s\n", s2)
+
+	for pos, char := range "aux" {
+		fmt.Printf("character '%c' starts at byte position %d\n", char, pos)
+	}
 }
